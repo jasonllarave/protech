@@ -26,6 +26,7 @@ jobs:
         uses: SonarSource/sonarcloud-github-action@v2
         with:
           token: ${{ secrets.SONAR_TOKEN }}
+          projectBaseDir: .
           args: >
             -Dsonar.projectKey=jasonllarave_Protech
             -Dsonar.organization=jasonllarave00
