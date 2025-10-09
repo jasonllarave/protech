@@ -16,10 +16,12 @@ jobs:
 
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@v2
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         with:
-          token: ${{ secrets.SONAR_TOKEN }}
           projectBaseDir: .
           args: >
             -Dsonar.projectKey=jasonllarave_Protech
             -Dsonar.organization=jasonllarave00
+
 
