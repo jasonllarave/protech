@@ -1,0 +1,17 @@
+name: SonarCloud
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    name: SonarCloud Scan
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: SonarCloud Scan
+        uses: SonarSource/sonarcloud-github-action@v2
+        with:
+          projectKey: jasonllarave_protech
+          organization: jasonllarave
+          token: ${{ secrets.SONAR_TOKEN }}
