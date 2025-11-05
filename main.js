@@ -42,6 +42,30 @@ gsap.from(".panel-contact .content", {
   }
 });
 
+gsap.from(".contact-left", {
+  scrollTrigger: {
+    trigger: "#contact",
+    start: "top 80%"
+  },
+  x: -100,
+  opacity: 0,
+  duration: 1,
+  ease: "power2.out"
+});
+
+gsap.from(".contact-img", {
+  scrollTrigger: {
+    trigger: "#contact",
+    start: "top 80%"
+  },
+  y: 50,
+  opacity: 0,
+  duration: 1,
+  ease: "power2.out",
+  stagger: 0.2
+});
+
+
 // Función para mover el indicador
 function moveIndicatorTo(targetItem) {
   const itemRect = targetItem.getBoundingClientRect();
@@ -207,7 +231,12 @@ function playServiceAnimation() {
   tl.to(".typewriter", {
     text: "Soluciones que se adaptan a ti",
     duration: 2.5,
-    ease: "none"
+    ease: "none",
+     color: "rgba(3, 53, 58, 1)",
+  fontSize: "2.5rem",
+  textShadow: "2px 2px 4px rgba(36, 101, 108, 0.86)",
+  
+
   });
 
   // ✅ NUEVO: Efecto colgante suave según scroll (se activa después de animación)
@@ -459,4 +488,40 @@ function animarSorteo() {
 }
 
 animarSorteo();
+
+
+
+
+//ANIMACION FAQ
+
+// FAQ Desplegable con animación GSAP
+document.querySelectorAll(".faq-question").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const item = btn.parentElement;
+    const answer = item.querySelector(".faq-answer");
+    const isActive = item.classList.contains("active");
+
+    // Cerrar otros FAQ
+    document.querySelectorAll(".faq-item").forEach((faq) => {
+      if (faq !== item) {
+        faq.classList.remove("active");
+        gsap.to(faq.querySelector(".faq-answer"), { height: 0, duration: 0.4, ease: "power2.inOut" });
+      }
+    });
+
+    // Alternar actual
+    if (isActive) {
+      item.classList.remove("active");
+      gsap.to(answer, { height: 0, duration: 0.4, ease: "power2.inOut" });
+    } else {
+      item.classList.add("active");
+      gsap.to(answer, { height: "auto", duration: 0.6, ease: "power2.out" });
+    }
+  });
+});
+
+
+
+
+
 

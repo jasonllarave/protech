@@ -4,24 +4,83 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Protech Technology</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+   
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="/style_responsive.css">
+  
 </head>
-<body>
-    <nav class="navbar">
+
+<body><div id="ancho-pantalla" style="position:fixed;top:0;left:0;background:#000;color:#fff;padding:5px;z-index:9999;"></div>
+
+<script>
+  function mostrarAncho() {
+    const ancho = window.innerWidth;
+    document.getElementById("ancho-pantalla").textContent = "Ancho de pantalla: " + ancho + "px";
+  }
+
+  // Mostrar al cargar
+  mostrarAncho();
+
+  // Actualizar al cambiar orientación
+  window.addEventListener("resize", mostrarAncho);
+</script>
+
+<div class="main-wrapper"> 
+
+<nav class="navbar">
+  <img src="img/logo-mini.png" alt="Logo" class="logo-mini1">
   <ul class="nav-links">
     <li class="nav-item active"><a href="#hero">Inicio</a></li>
     <li class="nav-item"><a href="#services">Servicios</a></li>
     <li class="nav-item"><a href="#contact">Contacto</a></li>
-    <div class="indicator"></div>
+    <div class="indicator"></div> 
   </ul>
+  
 </nav>
+
 
 <section class="panel panel-dinamica">
   <div class="background-layer capa1"></div>
   <div class="background-layer capa2"></div>
-  <div class="content">
-    <h2>Sección Dinámica</h2>
-    <p>Texto o Elementos aquí...</p>
+  <div class="content1">
+
+<div class="text-rotator">
+  <span class="word">Optimizamos</span>
+  <span class="word">Restauramos</span>
+  <span class="word">Protegemos</span>
+</div>
+
+    <div>
+      <div class="slider">
+  <div class="slide active"><img src="img/1.jpg" alt="Imagen 1"></div>
+  <div class="slide"><img src="img/2.jpg" alt="Imagen 2"></div>
+  <div class="slide"><img src="img/3.png" alt="Imagen 3"></div>
+  <div class="slide"><img src="img/4.png" alt="Imagen 4"></div>
+</div>
+<script>
+  const slides = document.querySelectorAll(".slide");
+  let current = 0;
+
+  function nextSlide() {
+    slides[current].classList.remove("active");
+    current = (current + 1) % slides.length;
+    slides[current].classList.add("active");
+  }
+
+  setInterval(nextSlide, 4000); // 👈 cambia cada 4 segundos
+</script>
+
+<div class="promo-text">
+  <h3 class="promo-tag">NUEVO & EXCLUSIVO</h3>
+  <h1 class="promo-title">MANTENIMIENTO <span>PC</span></h1>
+  <p class="promo-sub">¡Optimiza el rendimiento de tu equipo ahora!</p>
+  <a href="#contacto" class="promo-btn">Diagnostico Gratis</a>
+</div>
+    
+    
   </div>
 </section>
 
@@ -29,14 +88,17 @@
   <div class="instagram-layout">
     <!-- Caja de información (izquierda) -->
     <div class="instagram-info-box">
-      <img src="assets/logo-mini.png" alt="Logo Protech" class="info-logo" />
-      <h3 class="info-title">Protech Technology S.A.S</h3>
+      <img src="/img/logo-mini.jpeg" alt="Logo Protech" class="info-logo" />
+      <h3 class="info-title"></h3>
       <p class="info-description">
-        Soluciones técnicas sin complicaciones. Instalación, mantenimiento y venta de equipos especializados.
+        <strong class="descp">Soluciones</strong> técnicas sin complicaciones. Instalación, mantenimiento y venta de equipos especializados.
       </p>
-      <a href="https://www.instagram.com/protechtecnology/" target="_blank" class="info-button">
-        Ver perfil en Instagram
-      </a>
+      <!-- Redes sociales con efecto hover -->
+<ul class="social-icons">
+  <li><a href="https://www.instagram.com/protechtecnology/" target="_blank"><i class="fa-brands fa-instagram instagram"></i></a></li>
+  <li><a href="https://wa.me/57XXXXXXXXX" target="_blank"><i class="fa-brands fa-whatsapp whatsapp"></i></a></li>
+  
+</ul>
 
       <!-- Botones dentro del cuadro -->
       <div class="valores-botones">
@@ -53,7 +115,7 @@
             <div class="agua"></div>
             <div class="porcentaje">0%</div>
           </div>
-          <div class="valor-label">Eficacia</div>
+          <div class="valor-label">Optimizacion</div>
         </div>
 
         <div class="valor-medidor">
@@ -68,10 +130,9 @@
 
     <!-- Widget con su título (derecha) -->
     <div class="instagram-widget-container">
-      <h2 class="section-title">Últimas publicaciones</h2>
+      <h2 class="instagram-title">Últimas publicaciones</h2>
       <div class="instagram-widget-wrapper">
-        <script src="https://elfsightcdn.com/platform.js" async></script>
-        <div class="elfsight-app-50125a77-9471-4237-81c2-b994c236e98a" data-elfsight-app-lazy></div>
+      <div class="elfsight-app-11112208-fd4b-4c2c-b4ab-d47ad37ed9d6" data-elfsight-app-lazy></div>
       </div>
     </div>
   </div>
@@ -83,24 +144,30 @@
 
 
 
-    <section id="hero" class="panel panel-hero">
-      <div class="content">
-        <h1>Optimiza tu equipo</h1>
-        <p>Soluciones técnicas sin complicaciones</p>
-      </div>
-
-      <section id="sorteo" class="sorteo-section">
+   <section id="hero" class="panel panel-hero">
+  <div class="content2">
+    <h1>Optimiza tu equipo</h1>
+    <p>Soluciones técnicas garantía certificada</p>
+    
+  </div>
+<img src="./img/certi.png" class="certificado" alt="">
+  <section id="sorteo" class="sorteo-section">
     <div class="sorteo-layout">
       <!-- Texto promocional -->
       <div class="sorteo-info">
         <h2 class="sorteo-title">Optimiza tu equipo. Simplifica tu vida.</h2>
         <p class="sorteo-description">
-          ¿Tu computador está lento, tu impresora falla o tu sistema de seguridad necesita actualización? En <strong>Protech Technology S.A.S</strong> ofrecemos soluciones técnicas sin complicaciones: mantenimiento de computadores e impresoras, instalación de software, venta de equipos renovados y corporativos, y sistemas de seguridad con cámaras configuradas a tu medida.
+          ¿Tu computador está lento, tu impresora falla o tu sistema de seguridad necesita actualización? En <strong style="color: rgb(65, 173, 192);">Protech Technology S.A.S</strong> ofrecemos soluciones técnicas sin complicaciones: mantenimiento de computadores e impresoras, instalación de software, venta de equipos renovados y corporativos, y sistemas de seguridad con cámaras configuradas a tu medida.
           
           Nuestro servicio técnico especializado está diseñado para empresas y usuarios que necesitan resultados rápidos, confiables y duraderos. Cada optimización que hacemos busca mejorar el rendimiento, prolongar la vida útil de tus equipos y garantizar que tu entorno tecnológico funcione como debe.
-          <br /><br />
-          ¿Querés vivir la experiencia Protech? <strong>Participá en nuestro sorteo</strong> y ganá servicios gratuitos, asesorías personalizadas o productos tecnológicos. Es nuestra forma de acercarte a lo que hacemos.
         </p>
+        
+        <!-- Nueva frase con clase propia -->
+        <p class="sorteo-highlight">¡Vive la experiencia Protech!</p>
+        
+        <p class="sorteo-description1" >
+  <strong style="color: #00ffff;  ">Participa en nuestro sorteo</strong> y ganá servicios gratuitos, productos tecnológicos o asesorías personalizadas. En agradecimiento por tu fidelidad con nosotros.
+</p>
         <a href="#formulario-sorteo" id="neonShadow" class="sorteo-button">¡Participar ahora!</a>
       </div>
 
@@ -110,6 +177,7 @@
       </div>
     </div>
   </section>
+</section>
 
 
 
@@ -120,18 +188,25 @@
   <div id="loading-lottie" class="loading-lottie"></div>
 
 
-  <div class="service-block">Mantenimiento de Computadores e Impresoras</div>
-  <div class="service-block">Servicio Tecnico de Equipos de Computo</div>
-  <div class="service-block">Instalacion y Configuracion de Software</div>
-  <div class="service-block">Venta de Equipo, renovados Nuevos y Corporativos</div>
-  <div class="service-block">Soluciones técnicas sin complicaciones</div>
-  <div class="service-block">Instalacion de Sistemas de Seguridad y Camaras</div>
+  <div class="service-block"><i class='bx bx-check-circle'></i> Mantenimiento de Computadores e Impresoras</div>
+  <div class="service-block"><i class='bx bx-check-circle'></i> Servicio Técnico de Equipos de Cómputo</div>
+  <div class="service-block"><i class='bx bx-check-circle'></i> Instalación y Configuración de Software</div>
+  <div class="service-block"><i class='bx bx-check-circle'></i> Venta de Equipos Renovados, Nuevos y Corporativos</div>
+  <div class="service-block"><i class='bx bx-check-circle'></i> Recuperación de Información</div>
+  <div class="service-block"><i class='bx bx-check-circle'></i> Instalación de Sistemas de Seguridad y Cámaras</div>
 
   <div class="floating-center">
   <h2 class="typewriter"></h2>
   <p>Diseño inteligente, animaciones fluidas y experiencias memorables</p>
+  
 </div>
-
+<div class="iconos_servicive">
+<ul class="social-icons">
+  <li><a href="https://www.instagram.com/protechtecnology/" target="_blank"><i class="fa-brands fa-instagram instagram"></i></a></li>
+  <li><a href="https://wa.me/57XXXXXXXXX" target="_blank"><i class="fa-brands fa-whatsapp whatsapp"></i></a></li>
+  
+</ul>
+</div>
 
 </section>
 
@@ -139,31 +214,151 @@
     
   </section>
 
-  <section id="contact" class="panel panel-contact">
-    <div class="content">
-      <h2>Contáctanos</h2>
-      <p>WhatsApp directo y atención personalizada</p>
-    </div>
-  </section>
+ <section id="contact" class="panel panel-contact">
+  <div class="content">
+    <div class="contact-flex">
+      <div class="contact-left">
+       <h2 class="conth2">¿Tu equipo necesita un impulso?</h2>
+<p class="conth3">
+En <strong style="color: rgb(65, 173, 192);">Protech Technology</strong> te ofrecemos soluciones técnicas que no solo resuelven problemas, sino que optimizan tu entorno digital. Atención directa, resultados reales.
+</p>
 
-
-<section id="ubicacion" class="section ubicacion-section">
-  <div class="section-content">
-    <h2 class="section-title">Nuestra Ubicación</h2>
-    <div class="map-container">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.680264209476!2d-74.2155796259489!3d4.579324643468661!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9c1f5f5e3b6f%3A0x6b3f5c6e3d3b3c3b!2sSoacha%2C%20Cundinamarca!5e0!3m2!1ses!2sco!4v1696612345678!5m2!1ses!2sco"
-        width="100%"
-        height="100%"
-        style="border:0;"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade">
-      </iframe>
+<ul class="contact-benefits">
+  <li><i class='bx bx-check-circle'></i> <strong style="color: rgb(56, 59, 59);">Mantenimiento experto</strong> : Computadores e impresoras como nuevos.</li>
+  <li><i class='bx bx-check-circle'></i> <strong style="color: rgb(56, 59, 59);">Instalación de software</strong> : Sistemas listos para trabajar sin errores.</li>
+  <li><i class='bx bx-check-circle'></i> <strong style="color: rgb(56, 59, 59);">Venta de equipos</strong> : Renovados, corporativos y confiables.</li>
+  <li><i class='bx bx-check-circle'></i> <strong style="color: rgb(56, 59, 59);">Seguridad inteligente</strong> :Cámaras configuradas a tu medida.</li>
+  <li><i class='bx bx-check-circle'></i> <strong style="color: rgb(56, 59, 59);">WhatsApp directo</strong> :Asesoría personalizada en minutos.</li>
+</ul>
+        <a href="https://wa.me/57XXXXXXXXX" class="contact-btn">Contáctanos por WhatsApp</a>
+      </div>
+      <div class="contact-right">
+        <img src="img/contacto1.png" alt="Soporte técnico" class="contact-img1">
+        <img src="img/contacto2.png" alt="Equipo Protech" class="contact-img2">
+      </div>
     </div>
   </div>
 </section>
 
+
+
+
+<!-- Sección de ubicación -->
+<section id="ubicacion" class="section ubicacion-section">
+  <div class="section-content">
+    <h2 class="section-titleu">Nuestra Ubicación</h2>
+    <div class="map-container">
+     
+      <iframe src="https://www.google.com/maps/embed?pb=!4v1760719525718!6m8!1m7!1sJUzQdsIAnbWs_mRp3bStEw!2m2!1d4.665904390669008!2d-74.05816868578586!3f118.78198879778631!4f1.5761487129421283!5f0.7820865974627469"
+       width="1200" 
+       height="450"
+       style="border:0;"
+       allowfullscreen=""
+       loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+
+    </div>
+
+    <div class="slider-derecha">
+  <div class="slide-item active"><img src="img/empresa1.jpg" alt="Imagen 1"></div>
+  <div class="slide-item"><img src="img/empresa2.jpg" alt="Imagen 2"></div>
+  <div class="slide-item"><img src="img/servicio1.png" alt="Imagen 3"></div>
+  <div class="slide-item"><img src="img/servicio2.jpg" alt="Imagen 4"></div>
+</div>
+
+<script>
+  const slidesRight = document.querySelectorAll(".slide-item");
+  let currentRight = 0;
+
+  function nextSlideRight() {
+    slidesRight[currentRight].classList.remove("active");
+    currentRight = (currentRight + 1) % slidesRight.length;
+    slidesRight[currentRight].classList.add("active");
+  }
+
+  setInterval(nextSlideRight, 4000); // cambia cada 4 segundos
+</script>
+
+
+
+  </div>
+
+  
+</section>
+<section id="faq" class="faq-section">
+  <div class="faq-content">
+    <div class="faq-left">
+      <h2 class="faq-title">Preguntas Frecuentes</h2>
+
+      <div class="faq-grid">
+        <!-- COLUMNA 1 -->
+        <div class="faq-column">
+          <div class="faq-item">
+            <button class="faq-question">¿Qué servicios ofrece Protech Technology?</button>
+            <div class="faq-answer">Ofrecemos mantenimiento de computadores, instalación de software, venta de equipos y sistemas de seguridad con cámaras configuradas.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">¿Atienden empresas y clientes individuales?</button>
+            <div class="faq-answer">Sí, brindamos soluciones tanto a usuarios particulares como a compañías de cualquier tamaño.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">¿Puedo agendar una cita en línea?</button>
+            <div class="faq-answer">Por supuesto. Puedes hacerlo directamente desde nuestro botón de WhatsApp o el formulario de contacto.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">¿Tienen garantía sus servicios?</button>
+            <div class="faq-answer">Sí, todos nuestros servicios cuentan con garantía por desempeño y repuestos certificados.</div>
+          </div>
+        </div>
+
+        <!-- COLUMNA 2 -->
+        <div class="faq-column">
+          <div class="faq-item">
+            <button class="faq-question">¿Dónde están ubicados?</button>
+            <div class="faq-answer">Nos encuentras en Bogotá, con atención a domicilio en toda la ciudad y alrededores.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">¿Cuánto tarda una reparación?</button>
+            <div class="faq-answer">El tiempo depende del tipo de equipo, pero la mayoría de mantenimientos se realizan en menos de 24 horas.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">¿Qué métodos de pago aceptan?</button>
+            <div class="faq-answer">Aceptamos efectivo, transferencias y pagos digitales por Nequi, Daviplata y tarjeta.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">¿Ofrecen soporte remoto?</button>
+            <div class="faq-answer">Sí, realizamos diagnósticos y asistencia técnica de forma remota con herramientas seguras.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-right"></div>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="footer-container">
+    <h3 class="footer-title">Nuestros Valores</h3>
+    <ul class="footer-values">
+      <li><i class='bx bx-check-circle'></i> Compromiso con la calidad</li>
+      <li><i class='bx bx-check-circle'></i> Atención personalizada</li>
+      <li><i class='bx bx-check-circle'></i> Innovación constante</li>
+      <li><i class='bx bx-check-circle'></i> Transparencia y confianza</li>
+      <li><i class='bx bx-check-circle'></i> Soporte técnico profesional</li>
+    </ul>
+
+    <div class="footer-bottom">
+      <p>© 2025 ProTech Technology — Todos los derechos reservados</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Botón flotante de WhatsApp -->
+<a href="https://wa.me/573001234567" class="whatsapp-float" target="_blank" rel="noopener">
+  <i class='bx bxl-whatsapp'></i>
+</a>
 
 
 
@@ -175,6 +370,6 @@
   <script src="https://elfsightcdn.com/platform.js" async></script>
   <script src="main.js"></script>
   
-
+</div>
 </body>
 </html>
