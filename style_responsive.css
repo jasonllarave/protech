@@ -182,14 +182,15 @@ html, body, .main-wrapper {
   }
 
   .promo-text .promo-sub {
-    font-size: 0.8rem;
-    margin-left: 1.3rem;
-    margin-top: -0.1rem;
+    font-size: 0.9rem;
+    margin-left: 1rem;
+    margin-top: 0.9rem;
+    text-align: center;
   }
 
   .promo-btn {
-    margin-top: -0.1rem;
-    margin-left: 3.3rem;
+    margin-top: 0.1rem;
+    margin-left: 3rem;
     align-items: center;
   }
 
@@ -199,7 +200,7 @@ html, body, .main-wrapper {
     box-shadow: 0 43px 81px rgb(7, 66, 94);
     border-radius: 14px;
     width: 89%;
-    height: 84vh;
+    height: 74vh;
     margin-top: 1rem;
     
   }
@@ -322,7 +323,7 @@ margin-left: -7rem;
 
 #neonShadow {
     display: block;
-  margin: 1rem 0 0 calc(174% - 17rem); /* Centrado ajustado */
+  margin: 1rem 0 0 calc(174% - 18.7rem); /* Centrado ajustado */
   font-size: 1.2rem;
  
    margin-top: 26.6rem;
@@ -343,7 +344,7 @@ margin-left: -7rem;
     width: 18% !important; /* 👈 Usa !important para forzar */
     min-width: 300px !important;
     margin: 2rem auto 0 !important; /* Centrado */
-    margin-left: -7.5rem !important;
+    margin-left: -8.8rem !important;
     margin-right: auto !important;
     padding: 1rem;
     transform: translateX(0);
@@ -366,7 +367,7 @@ margin-left: -7rem;
     width:18% !important; /* 👈 Usa !important para forzar */
     min-width: 339px !important;
     margin: 1.7rem auto 0 !important; /* Centrado */
-    margin-left: -7.7rem !important;
+    margin-left: -8.9rem !important;
     text-align:center;
     padding: 1rem;
     transform: translateX(0);
@@ -411,7 +412,7 @@ margin-left: -7rem;
 
   .certificado{
     width: 13vh;
-    transform: translateX(-1.5rem) translateY(53.6rem);
+    transform: translateX(-0.5rem) translateY(53.6rem);
     opacity: 1;
 }
 
@@ -526,8 +527,8 @@ margin-left: -7rem;
     width: 50%;
     margin-left: 28.4rem;
     margin-top: -3.6rem;
-    color: rgb(116, 123, 124);
-    text-shadow: 0 1px 1px rgba(126, 213, 219, 0.562);
+   color: rgb(12, 12, 105);
+    text-shadow: 0 1px 1px rgb(4, 221, 250);
   }
 .map-container{
     width: 43%;
@@ -538,11 +539,11 @@ margin-left: -7rem;
  /* Ubicación gallery */
 
    .slider-derecha {
-    width: 115vh;
-    max-width: 140vh;
+    width: 105vh;
+    max-width: 110vh;
     height: 95vw;
-   transform: translateX(24rem);  
-   margin-top: 9.5rem;
+   transform: translateX(23.4rem);  
+   margin-top: 11.5rem;
   
   }
   .slide-item img {
@@ -1050,8 +1051,8 @@ margin-left: -7rem;
 
   .sorteo-title{
     font-size: 1.6rem;
-    margin-left: -1.8rem;
-    
+    margin-left: -1.4rem;
+    text-align: left;
     margin-top: -17.7rem;
     width: 340px;
      color: rgb(12, 12, 105);
@@ -1102,7 +1103,7 @@ margin-left: -7rem;
   .sorteo-description {
     max-width: 40vh;
     
-    margin-left: -5.7rem;
+    margin-left: -4.7rem;
     padding: 1rem;
     box-shadow: none;
     background: transparent;
