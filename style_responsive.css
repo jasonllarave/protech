@@ -121,7 +121,7 @@ html, body, .main-wrapper {
 
 .slider {
     position: relative;
-    top: 15rem;
+    top: 14rem;
     right: auto;
     left: 0.6rem;
     width: 100%; /* Cambié de 190% a 90% */
@@ -323,7 +323,7 @@ margin-left: -7rem;
 
 #neonShadow {
     display: block;
-  margin: 1rem 0 0 calc(174% - 18.7rem); /* Centrado ajustado */
+  margin: 1rem 0 0 calc(174% - 18rem); /* Centrado ajustado */
   font-size: 1.2rem;
  
    margin-top: 26.6rem;
@@ -344,7 +344,7 @@ margin-left: -7rem;
     width: 18% !important; /* 👈 Usa !important para forzar */
     min-width: 300px !important;
     margin: 2rem auto 0 !important; /* Centrado */
-    margin-left: -8.8rem !important;
+    margin-left: -7.8rem !important;
     margin-right: auto !important;
     padding: 1rem;
     transform: translateX(0);
@@ -367,7 +367,7 @@ margin-left: -7rem;
     width:18% !important; /* 👈 Usa !important para forzar */
     min-width: 339px !important;
     margin: 1.7rem auto 0 !important; /* Centrado */
-    margin-left: -8.9rem !important;
+    margin-left: -7.9rem !important;
     text-align:center;
     padding: 1rem;
     transform: translateX(0);
@@ -412,7 +412,7 @@ margin-left: -7rem;
 
   .certificado{
     width: 13vh;
-    transform: translateX(-0.5rem) translateY(53.6rem);
+    transform: translateX(-0.2rem) translateY(53.6rem);
     opacity: 1;
 }
 
@@ -542,7 +542,7 @@ margin-left: -7rem;
     width: 105vh;
     max-width: 110vh;
     height: 95vw;
-   transform: translateX(23.4rem);  
+   transform: translateX(22.4rem);  
    margin-top: 11.5rem;
   
   }
@@ -1318,7 +1318,7 @@ margin-left: -7rem;
     width: 47vh;
     max-width: 90vh;
     height: 75vw;
-   transform: translateX(3.5rem);  
+   transform: translateX(3rem);  
    margin-top: 15.8rem;
    background-color: rgba(0, 255, 255, 0.089);
   }
