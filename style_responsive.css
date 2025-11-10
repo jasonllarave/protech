@@ -68,7 +68,22 @@ html, body, .main-wrapper {
   min-height: 300px;
   border: 0;
 }
+  .slider-derecha {
+    width: 105vh;
+    max-width: 110vh;
+    height: 95vw;
+   transform: translateX(18.4rem);  
+   margin-top: 11.5rem;
+  
+  }
+  .slide-item img {
+    width: 40vh;
+    margin-left: 15rem;
+    margin-top: 0rem;
+    background-color: rgba(0, 255, 255, 0.24);
+    height: 85vw;
 
+  }
 
 
 
@@ -121,7 +136,7 @@ html, body, .main-wrapper {
 
 .slider {
     position: relative;
-    top: 14rem;
+    top: 13rem;
     right: auto;
     left: 0.6rem;
     width: 100%; /* Cambié de 190% a 90% */
@@ -200,7 +215,7 @@ html, body, .main-wrapper {
     box-shadow: 0 43px 81px rgb(7, 66, 94);
     border-radius: 14px;
     width: 89%;
-    height: 74vh;
+    height: 81.9vh;
     margin-top: 1rem;
     
   }
@@ -542,8 +557,10 @@ margin-left: -7rem;
     width: 105vh;
     max-width: 110vh;
     height: 95vw;
-   transform: translateX(22.4rem);  
-   margin-top: 11.5rem;
+   display: flex;
+  text-align: center;
+   transform: translateX(18%);
+  margin: 155px auto 0 auto; 
   
   }
   .slide-item img {
@@ -587,13 +604,23 @@ margin-left: -7rem;
   }
 }
 
+@media (max-width: 375px) {
+
+    .slider-derecha {
+    margin-left: auto;
+    margin-right: -9rem;
+    transform: none;
+  }
+
+}
+
 
 
 
 @media (min-width: 390px) and (max-width: 400px) {
 
   .slider {
-    transform: translateY(-3rem);
+    transform: translateY(-1rem);
   }
 
 .indicator{
@@ -635,6 +662,17 @@ margin-left: -7rem;
     left: 0;
     height: 15.6vh;
     border: 1px solid rgb(119, 207, 248);
+  }
+
+  .content1 {
+    background-color: rgba(53, 175, 223, 0.514);
+    border: 5px solid rgba(192, 219, 221, 0.432);
+    box-shadow: 0 43px 81px rgb(7, 66, 94);
+    border-radius: 14px;
+    width: 89%;
+    height: 71.9vh;
+    margin-top: 1rem;
+    
   }
   .promo-btn {
     margin-top: -0.6rem;
@@ -721,18 +759,18 @@ margin-left: -7rem;
 
 .certificado{
     width: 13vh;
-    transform: translateX(-0.8rem) translateY(52.6rem);
+    transform: translateX(0.7rem) translateY(52.6rem);
 }
 
 .content2{
     margin-top: 86.6rem;
-  margin-left: -2rem;
+  margin-left: -3rem;
   margin-right: 0;
   width: 115%; /* Más ancho horizontalmente */
   max-width: none; /* Quita límite de ancho */
   padding: 0.8rem 1.5rem; /* Menos alto, más ancho en padding */
   box-sizing: border-box; 
-    transform: translateX(14vh);
+    transform: translateX(19vh);
     margin-bottom: 1rem;
   }
 
@@ -826,8 +864,10 @@ margin-left: -7rem;
     height: 85vw;
    transform: translateX(28.9rem);  
    margin-top: 12rem;
-   display: inline-block;
-   justify-content: center;
+    display: flex;
+  text-align: center;
+  transform: none;
+  margin: 10.9rem -14.9rem  10rem auto; 
   }
   .slide-item img {
     height: 73vw;
@@ -916,7 +956,7 @@ margin-left: -7rem;
     box-shadow: 0 43px 81px rgb(7, 66, 94);
     border-radius: 14px;
     width: 89%;
-    height: 87vh;
+    height: 85vh;
     margin-top: 28rem;
     margin-bottom: 2rem;
   }
@@ -924,7 +964,7 @@ margin-left: -7rem;
   /* Panel hero y slider */
   .slider {
     position: relative;
-    top: 14.8rem;
+    top: 15.8rem;
     right: auto;
     left: 0;
     width: 100%; /* Cambié de 190% a 90% */
@@ -1309,24 +1349,31 @@ margin-left: -7rem;
     width: 46%;
     height: 36vh;
     margin-left: 29.5rem;
-    margin-top: 2rem;
+    margin-top: -1rem;
     
     }
  /* Ubicación gallery */
 
    .slider-derecha {
-    width: 47vh;
+    width: 39vh;
     max-width: 90vh;
     height: 75vw;
-   transform: translateX(3rem);  
-   margin-top: 15.8rem;
+    display: flex;
+  text-align: center;
+  transform: none;
+   margin-top: 10.5rem;
+margin: 1rem -2rem  5rem auto;  
+   margin-top: 16.2rem;
    background-color: rgba(0, 255, 255, 0.089);
+   
   }
   .slide-item img {
-    width: 45vh;
-    margin-left: 0.1rem;
+    width: 49vh;
+    margin-left: -3rem;
     margin-top: 0.2rem;
     height: 69vw;
+    padding-left: -27rem;
+    
   }
 
   .faq-title{
@@ -1361,6 +1408,8 @@ margin-left: -7rem;
   }
   
 }
+
+
 
 
 /* ---------------------------
