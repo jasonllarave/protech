@@ -290,7 +290,7 @@ html, body, .main-wrapper {
 
   .instagram-widget-wrapper {
     margin-left: -3rem !important;
-    min-width: 180% !important;
+    min-width: 100% !important;
   }
 
   .social-icons {
@@ -332,7 +332,7 @@ margin-left: -7rem;
   width: 380%; /* Fuerza el ancho */  
   height: auto; /* Mantiene proporción */
   margin-left: -19.4rem;
-  margin-top: 40.3rem;
+  margin-top: 40.3rem; 
   object-fit: contain; /* Mantiene calidad */
 }
 
@@ -568,7 +568,7 @@ margin-left: -7rem;
   }
   .slide-item img {
     width: 40vh;
-    margin-left: 20.6rem;
+    margin-left: 16.3rem;
     margin-top: 1.9rem;
     background-color: rgba(0, 255, 255, 0.24);
     height: 85vw;
@@ -1637,7 +1637,7 @@ margin: 1rem -0.7rem  5rem auto;
   }
 
   .instagram-widget-wrapper {
-    margin-left: 1rem !important;
+    margin-left: -0.5rem !important;
     min-width: 100% !important;
     margin-top: 3rem;
   }
@@ -2634,7 +2634,7 @@ margin: 1rem -0.7rem  5rem auto;
      INSTAGRAM
      ======================================== */
   .instagram-title {
-    margin-left: 19rem;
+    margin-left: 21rem;
     font-size: 2.2rem;
     color: rgb(12, 12, 105);
     text-shadow: 0 1px 1px rgb(4, 221, 250);
@@ -2643,7 +2643,9 @@ margin: 1rem -0.7rem  5rem auto;
 
   .instagram-widget-wrapper{
      margin-top: -1rem;
-     margin-left: 19rem;
+     margin-left: 17rem;
+     max-height: 50vw;
+
   }
 
 
@@ -3365,7 +3367,7 @@ margin: 1rem -0.7rem  5rem auto;
      INSTAGRAM
      ======================================== */
   .instagram-title {
-    margin-left: 24.6rem;
+    margin-left: 28.8rem;
     font-size: 2.6rem;
      color: rgb(12, 12, 105);
     text-shadow: 0 1px 1px rgb(4, 221, 250);
