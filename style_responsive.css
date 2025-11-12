@@ -735,7 +735,7 @@ margin-left: -7rem;
     width: 18% !important; /*  Usa !important para forzar */
     min-width: 300px !important;
     margin: 2rem auto 0 !important; /* Centrado */
-    margin-left: -7.8rem !important;
+    margin-left: -7.3rem !important;
     margin-right: auto !important;
     padding: 1rem;
     transform: translateX(0);
@@ -889,11 +889,12 @@ margin-left: -7rem;
   text-align: center;
   transform: none;
   margin: 10.9rem -9.7rem  10rem auto; 
+
   }
   .slide-item img {
     height: 73vw;
      width: 40vh;
-    margin-left: 13.9rem;
+    margin-left: 10.9rem;
     margin-top: 0rem;
     background-color: rgba(0, 255, 255, 0.24);
   }
