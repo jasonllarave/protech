@@ -365,7 +365,9 @@ margin-left: -7rem;
     transform: translateX(0);
     padding-top: 0rem;
     font-size: 1.1rem; 
-    
+    text-align: justify;
+  text-justify: inter-word; /* o 'auto' para que el navegador decida */
+  hyphens: auto; /* permite cortes de palabras si el idioma lo soporta */
     
   }
 
@@ -389,7 +391,9 @@ margin-left: -7rem;
     padding-top: 0rem;
     font-size: 1.1rem;
     padding-top: 1rem;
-    
+    text-align: justify;
+  text-justify: inter-word; /* o 'auto' para que el navegador decida */
+  hyphens: auto; /* permite cortes de palabras si el idioma lo soporta */
     
     
     
@@ -730,6 +734,8 @@ margin-left: -7rem;
   }
 
   
+
+  
  .sorteo-highlight {
     font-size: 1.5rem;
     margin: 1.5rem 0;
@@ -742,14 +748,16 @@ margin-left: -7rem;
    .sorteo-description1 {
    
    transform: translateX(-0.1rem);
-    
+    text-align: justify;
+  text-justify: inter-word; /* o 'auto' para que el navegador decida */
+  hyphens: auto; /* permite cortes de palabras si el idioma lo soporta */
   }
  
 
 .sorteo-imagen img {
   width: 380%; /* Fuerza el ancho */  
   height: auto; /* Mantiene proporción */
-  margin-left: -20rem;
+  margin-left: -19.6rem;
   margin-top: 20rem;
   object-fit: contain; /* Mantiene calidad */
 }
@@ -867,7 +875,7 @@ margin-left: -7rem;
     display: flex;
   text-align: center;
   transform: none;
-  margin: 10.9rem -14.9rem  10rem auto; 
+  margin: 10.9rem -15.7rem  10rem auto; 
   }
   .slide-item img {
     height: 73vw;
@@ -1120,6 +1128,9 @@ margin-left: -7rem;
      width: 120%;
      margin-left: -5.2rem !important;
      transform: translateX(0.6rem);
+     text-align: justify;
+  text-justify: inter-word; /* o 'auto' para que el navegador decida */
+  hyphens: auto; /* permite cortes de palabras si el idioma lo soporta */
   }
 
   .content2{
@@ -1150,7 +1161,9 @@ margin-left: -7rem;
 
   .sorteo-description {
     max-width: 40vh;
-    
+    text-align: justify;
+  text-justify: inter-word; /* o 'auto' para que el navegador decida */
+  hyphens: auto; /* permite cortes de palabras si el idioma lo soporta */
     margin-left: -4.7rem;
     padding: 1rem;
     box-shadow: none;
@@ -1378,7 +1391,7 @@ margin: 1rem -0.7rem  5rem auto;
 
   .faq-title{
     margin-top: -5rem;
-    margin-left: 2.8rem;
+    margin-left: 3.8rem;
   }
 
 .faq-grid {
@@ -1389,7 +1402,7 @@ margin: 1rem -0.7rem  5rem auto;
   }
 
   .faq-grid > * {
-    width: 168%;                 /* que cada item ocupe todo el ancho */
+    width: 175%;                 /* que cada item ocupe todo el ancho */
   }
 
   .faq-right {
@@ -1404,7 +1417,7 @@ margin: 1rem -0.7rem  5rem auto;
     box-shadow: 0 4px 10px rgba(11, 179, 208, 0.13);
     filter: brightness(1);       /* opcional: ajustar brillo */
     margin-top: 30rem;
-    margin-left: 1rem;
+    margin-left: 0.5rem;
   }
   
 }
@@ -1653,6 +1666,9 @@ margin: 1rem -0.7rem  5rem auto;
      min-width: 293px !important;
      margin-left: -9.9rem !important;
      transform: translateX(0.6rem);
+     text-align: justify;
+  text-justify: inter-word; /* o 'auto' para que el navegador decida */
+  hyphens: auto; /* permite cortes de palabras si el idioma lo soporta */
   }
 
   .content2{
@@ -1690,6 +1706,9 @@ margin: 1rem -0.7rem  5rem auto;
     background: transparent;
     font-size: 1.3rem;
     color: black;
+    text-align: justify;
+  text-justify: inter-word; /* o 'auto' para que el navegador decida */
+  hyphens: auto; /* permite cortes de palabras si el idioma lo soporta */
   }
 
 .sorteo-imagen img {
