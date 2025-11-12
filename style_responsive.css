@@ -569,7 +569,7 @@ margin-left: -7rem;
   .slide-item img {
     width: 40vh;
     margin-left: 15rem;
-    margin-top: 1.9rem;
+    margin-top: 0.9rem;
     background-color: rgba(0, 255, 255, 0.24);
     height: 85vw;
 
@@ -622,8 +622,21 @@ margin-left: -7rem;
 
 @media (min-width: 390px) and (max-width: 400px) {
 
+
+  .logo-mini1 {
+    min-width: 9.9rem;
+    height: 4.5vh;
+    max-height: 190px; 
+    margin-left: 6rem;
+    margin-top: -2.7rem;
+}
+.nav-links {
+    margin-top: 3.5rem;
+    margin-left: -16.8rem;
+}
+
   .slider {
-    transform: translateY(-1rem);
+    transform: translateY(-1.8rem);
   }
 
 .indicator{
@@ -714,6 +727,11 @@ margin-left: -7rem;
     text-shadow: 0 1px 1px rgb(4, 221, 250);
     font-size: 1.8rem;
     
+  }
+
+  .instagram-widget-wrapper {
+    margin-left: -1rem !important;
+    min-width: 100% !important;
   }
   .panel-hero{
   margin-top: 0rem;
