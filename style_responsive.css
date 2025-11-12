@@ -339,9 +339,8 @@ margin-left: -7rem;
 #neonShadow {
     display: block;
   margin: 1rem 0 0 calc(174% - 18rem); /* Centrado ajustado */
-  font-size: 1.2rem;
- 
-   margin-top: 26.6rem;
+  font-size: 1.2rem; 
+   margin-top: 27.9rem;
    margin-bottom: 10rem;
   }
   
@@ -881,15 +880,15 @@ margin-left: -7rem;
  /* Ubicación gallery */
 
    .slider-derecha {
-    width: 115vh;
-    max-width: 140vh;
+    width: 95vh;
+    max-width: 100vh;
     height: 85vw;
-   transform: translateX(28.9rem);  
+   transform: translateX(18.9rem);  
    margin-top: 12rem;
     display: flex;
   text-align: center;
   transform: none;
-  margin: 10.9rem -14.7rem  10rem auto; 
+  margin: 10.9rem -9.7rem  10rem auto; 
   }
   .slide-item img {
     height: 73vw;
