@@ -11,7 +11,20 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="/style_responsive.css">
   
-</head>
+</head><div id="ancho-pantalla" style="position:fixed;top:0;left:0;background:#000;color:#fff;padding:5px;z-index:9999;"></div>
+
+<script>
+  function mostrarAncho() {
+    const ancho = window.innerWidth;
+    document.getElementById("ancho-pantalla").textContent = "Ancho de pantalla: " + ancho + "px";
+  }
+
+  // Mostrar al cargar
+  mostrarAncho();
+
+  // Actualizar al cambiar orientación
+  window.addEventListener("resize", mostrarAncho);
+</script>
 
 <body>
 
