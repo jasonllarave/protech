@@ -105,15 +105,15 @@ html, body, .main-wrapper {
 
 .logo-mini1 {
     min-width: 9.9rem;
-    height: 3.5vh;
+    height: 4.5vh;
     max-height: 190px; 
-    margin-left: 5.8rem;
+    margin-left: 4.4rem;
     margin-top: -2.7rem;
 }
 
 .nav-links {
     margin-top: 3.5rem;
-    margin-left: -17rem;
+    margin-left: -15rem;
 }
 .nav-item a {
    width: 10%; 
@@ -332,7 +332,7 @@ margin-left: -7rem;
   width: 380%; /* Fuerza el ancho */  
   height: auto; /* Mantiene proporción */
   margin-left: -19.4rem;
-  margin-top: 44rem;
+  margin-top: 40.3rem;
   object-fit: contain; /* Mantiene calidad */
 }
 
@@ -557,8 +557,8 @@ margin-left: -7rem;
  /* Ubicación gallery */
 
    .slider-derecha {
-    width: 105vh;
-    max-width: 110vh;
+    width: 100vh;
+    max-width: 100vh;
     height: 95vw;
    display: flex;
   text-align: center;
@@ -568,8 +568,8 @@ margin-left: -7rem;
   }
   .slide-item img {
     width: 40vh;
-    margin-left: 15rem;
-    margin-top: 0rem;
+    margin-left: 20.6rem;
+    margin-top: 1.9rem;
     background-color: rgba(0, 255, 255, 0.24);
     height: 85vw;
 
@@ -771,11 +771,12 @@ margin-left: -7rem;
   width: 380%; /* Fuerza el ancho */  
   height: auto; /* Mantiene proporción */
   margin-left: -19.6rem;
-  margin-top: 20rem;
+  margin-top: 18rem;
   object-fit: contain; /* Mantiene calidad */
 }
 #neonShadow{
   margin-right: -5rem;
+  
 }
 
 .certificado{
