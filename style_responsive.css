@@ -356,7 +356,7 @@ margin-left: -7rem;
   }
   
   .sorteo-description {
-    width: 18% !important; /* 👈 Usa !important para forzar */
+    width: 18% !important; /*  Usa !important para forzar */
     min-width: 300px !important;
     margin: 2rem auto 0 !important; /* Centrado */
     margin-left: -7.8rem !important;
@@ -732,7 +732,21 @@ margin-left: -7rem;
     width: 310%;
 
   }
-
+.sorteo-description {
+    width: 18% !important; /*  Usa !important para forzar */
+    min-width: 300px !important;
+    margin: 2rem auto 0 !important; /* Centrado */
+    margin-left: -7.8rem !important;
+    margin-right: auto !important;
+    padding: 1rem;
+    transform: translateX(0);
+    padding-top: 0rem;
+    font-size: 1.1rem; 
+    text-align: justify;
+  text-justify: inter-word; /* o 'auto' para que el navegador decida */
+  hyphens: auto; /* permite cortes de palabras si el idioma lo soporta */
+   
+  }
   
 
   
@@ -875,7 +889,7 @@ margin-left: -7rem;
     display: flex;
   text-align: center;
   transform: none;
-  margin: 10.9rem -15.7rem  10rem auto; 
+  margin: 10.9rem -14.7rem  10rem auto; 
   }
   .slide-item img {
     height: 73vw;
@@ -1325,10 +1339,13 @@ margin-left: -7rem;
   }
 
   .contact-benefits{
-    margin-left: -2.7rem;
+    margin-left: -1.7rem;
     font-size: 1.1rem;
     text-align: end;
-
+ text-align:start;
+  text-justify: inter-word; /* o 'auto' para que el navegador decida */
+  hyphens: auto; /* permite cortes de palabras si el idioma lo soporta */
+   
   }
 
   .contact-btn{
