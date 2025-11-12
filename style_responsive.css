@@ -753,14 +753,14 @@ margin-left: -7rem;
     font-size: 1.5rem;
     margin: 1.5rem 0;
     padding: 0.8rem;
-    margin-left: -8.6rem;
+    margin-left: -8.2rem;
     transform: scale(0.9) translateY(4px);
     width: 300%;
   }
 
    .sorteo-description1 {
    
-   transform: translateX(-0.1rem);
+   transform: translateX(0.2rem);
     text-align: justify;
   text-justify: inter-word; /* o 'auto' para que el navegador decida */
   hyphens: auto; /* permite cortes de palabras si el idioma lo soporta */
