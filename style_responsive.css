@@ -3731,20 +3731,6 @@ margin: 1rem -0.7rem  5rem auto;
 /* Ajustes SOLO para pantallas de 360px */
 @media screen and (max-width: 360px) {
 
-     .service-block:nth-child(2) {align-items: center; margin-top: auto; } }
-.service-block:nth-child(3) {align-items: center; margin-top: auto;}
-.service-block:nth-child(4) {align-items: center; margin-top: auto;}
-.service-block:nth-child(5) {align-items: center; margin-top: auto;  }
-.service-block:nth-child(6) {align-items: center; margin-top: auto;}
-.service-block:nth-child(7) {align-items: center; margin-top: auto; }
-
-  .service-block {
-    margin: 0.5rem auto !important; /* centra los bloques */
-    width: 70% !important;          /* evita que se desborden */
-    transform: translateY(-20rem);
-    margin-top: -22rem;
-    top: -19rem;
-  }
 
   .slider-derecha {
     transform: none !important;     /* elimina el corrimiento lateral */
@@ -3761,6 +3747,7 @@ margin: 1rem -0.7rem  5rem auto;
     height: 80vw;
     
   }
+}
 
 
 /* =========================================================
