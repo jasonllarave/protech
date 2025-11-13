@@ -3728,6 +3728,30 @@ margin: 1rem -0.7rem  5rem auto;
   --_safe-margin: 0;
 }
 
+/* Ajustes SOLO para pantallas de 360px */
+@media screen and (max-width: 360px) {
+  .service-block {
+    margin: 0.5rem auto !important; /* centra los bloques */
+    width: 70% !important;          /* evita que se desborden */
+  }
+
+  .slider-derecha {
+    transform: none !important;     /* elimina el corrimiento lateral */
+    margin: 2rem auto !important;
+    width: 70% !important;
+    height: 100vw;
+    left: 23rem;
+    top: 19rem;
+  }
+
+  .slide-item img {
+    margin: 0 auto !important;
+    width: 40% !important;
+    height: 80vw;
+    
+  }
+}
+
 /* =========================================================
    FIN style_responsive.css
    ========================================================= */
