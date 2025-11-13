@@ -2710,7 +2710,7 @@ margin: 1rem -0.7rem  5rem auto;
 
   .certificado{
     width: 8%;
-    transform: translateX(52rem) translateY(9rem);
+    transform: translateX(52rem) translateY(15rem);
 }
 
   .content2 {
@@ -3730,9 +3730,18 @@ margin: 1rem -0.7rem  5rem auto;
 
 /* Ajustes SOLO para pantallas de 360px */
 @media screen and (max-width: 360px) {
+
+     .service-block:nth-child(2) {margin-top: -32.5rem; margin-left: 34%;box-shadow: 0 1px 8px rgba(0, 238, 255, 0.459); }
+.service-block:nth-child(3) {align-items: center; }
+.service-block:nth-child(4) {align-items: center; }
+.service-block:nth-child(5) {align-items: center;  }
+.service-block:nth-child(6) {align-items: center;  }
+.service-block:nth-child(7) {align-items: center;  }
+
   .service-block {
     margin: 0.5rem auto !important; /* centra los bloques */
     width: 70% !important;          /* evita que se desborden */
+    margin-top: -20rem;
   }
 
   .slider-derecha {
